@@ -1,0 +1,9 @@
+configurando o git 
+git config --global user.name *nome de usúario*
+git config --global user.email *email*
+git clone *link do repositório*
+
+salvando no git 
+git add .
+git commit -m "Inicio dos códigos da página inicial"
+git push
