@@ -1,9 +1,41 @@
-section
-{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #1a1818;
 }
 
-#left
+body
 {
+    background-color: gainsboro;
+}
 
+ul
+{
+    list-style: none;
+}
+
+main
+{
+    margin: 1rem;   
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 1rem;   
+}
+
+@media (max-width: 880px) 
+{
+    main 
+    {
+        grid-template-columns: 1fr;    
+    }
+}
+
+img
+{
+    width: 200px;
 }
