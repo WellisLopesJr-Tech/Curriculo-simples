@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* :root
+{
+    --base-color: rgb(0, 83, 138)
+      (var(--base-color)) 
+} */
+
 *
 {
     margin: 0;
@@ -51,6 +57,7 @@ main
 .left-image img
 {
     width: 100%;
+    border-radius: 11px;
 }
 
 .left-image h1
@@ -64,7 +71,7 @@ main
 
 i
 {
-    color: rgb(2, 107, 177);
+    color: rgb(0, 83, 138);
 }
 
 .personal, 
@@ -121,14 +128,15 @@ progress
 
 .date
 {
-   color: rgb(2, 107, 177)
+   color: rgb(238, 234, 234);
 }
+
 
 .date span 
 {
-    background-color:rgb(2, 107, 177);
-    color: white;
-    padding: 0.4rem 1rem;
+    background-color:rgb(70, 178, 250);
+    color: rgb(238, 234, 234);
+    padding: 0.4rem 0.5rem;
     border-radius: 5px;
 }
 
@@ -158,8 +166,22 @@ footer a
     text-decoration: none;
 }
 
-img
+.progress
 {
-    width: 200px;
-    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    height: 1rem;
+    border-radius: 20px;
+    background-color: #d4eefa;
+    
 }
+
+.bar
+{
+    border-radius: 20px;
+    height: 100%;
+    transition: width;
+    transition-duration: 1s;
+    background-color: rgb(70, 178, 250);
+}
+
